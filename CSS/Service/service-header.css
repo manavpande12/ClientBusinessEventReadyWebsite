@@ -1,0 +1,114 @@
+
+.header{
+    height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(255, 255, 255), #eaeaea);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.custom-shape-divider-bottom-1720171669 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720171669 svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 103px;
+}
+
+.custom-shape-divider-bottom-1720171669 .shape-fill {
+    fill: #FFD900;
+    opacity: 0.8;
+    
+}
+
+
+.heading h2{
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    color: #273036;
+    position: relative;
+   
+    
+    
+}
+
+.typer{
+    color:#273036;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: capitalize;
+   
+    position: relative;
+    
+    
+}
+
+@media screen and (max-width: 1229px) {
+    .header{
+        height: 80px;
+    }
+    .heading h2{
+        font-size: 18px;
+    }
+    
+    .typer{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .header{
+        height: 250px;
+    }
+    .heading h2{
+        font-size: 28px;
+    }
+    
+    .typer{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .header{
+        height: 200px;
+    }
+    .heading h2{
+        font-size: 20px;
+    }
+    
+    .typer{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 383px) {
+    .header{
+        height: 140px;
+    }
+    .heading h2{
+        font-size: 12px;
+    }
+    
+    .typer{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

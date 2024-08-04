@@ -1,0 +1,35 @@
+/* Style the Zoom IMg */
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+  
+  }
+  
+  .full-img img {
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .full-img span {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 30px;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+  
+  }
+  
+  .full-img span:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  

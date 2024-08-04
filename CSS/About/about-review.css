@@ -1,0 +1,278 @@
+.about-review {
+
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+/*Title*/
+.about-review-title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*header*/
+.about-review-header {
+    margin: 1rem 0;
+    background: var(--bggs);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.abt-h1 {
+    width: 60px;
+    height: 50%;
+}
+
+.abt-h1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.abt-h2 {
+    transform: translateY(0.5rem);
+    height: 50%;
+}
+
+.abt-h2 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.abt-h2 p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.abt-h2 img {
+    width: 25px;
+    height: 25px;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+
+}
+
+.abt-h2 img:nth-child(2n):hover {
+    transform: translateY(-0.6rem) rotate(45deg) scale(1.2);
+}
+
+.abt-h2 img:nth-child(2n+1):hover {
+    transform: translateY(-0.6rem) rotate(-45deg) scale(1.2);
+}
+
+
+.abt-h3 {
+    position: absolute;
+    right: 1rem;
+    height: 50%;
+}
+
+.abt-h3 button {
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    background: var(--yellow-back);
+}
+
+
+@media screen and (max-width: 720px) {
+    .about-review-header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .abt-h3 {
+        position: relative;
+        right: 0;
+    }
+}
+
+
+/*body*/
+.about-review-body {
+    background: #fff;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 10px;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+}
+
+.review-box {
+    background: var(--bggs);
+    border-radius: 1rem;
+    padding: 1rem;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .3s;
+}
+.review-box:hover{
+    box-shadow: 0 0 5px 5px var(--yellow);
+    transform: scale(0.9);
+}
+
+.review-profile {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-profile span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.review-profile span img {
+    width: 100%;
+    height: 80%;
+}
+
+.review-profile span:nth-last-child(1) img {
+    width: 50%;
+    height: 50%;
+}
+
+.review-profile h1 {
+    transform: translateY(0.2rem);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1rem;
+    width: 60%;
+    height: 100%;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: black;
+}
+
+.review-rating {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.review-rating img {
+    width: 20px;
+    height: 20px;
+}
+
+.review-box p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*media Query*/
+
+@media screen and (max-width: 631px) {
+    .about-review-body {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .review-box {
+        position: relative;
+    }
+
+    .review-profile span:nth-last-child(1) {
+        position: absolute;
+        height: max-content;
+        top: 3px;
+        left: 0px;
+    }
+
+    .review-profile span:nth-last-child(1) img {
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .about-review-body {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+
+    .review-box {
+        position: relative;
+    }
+
+    .review-profile {
+        height: max-content;
+
+    }
+
+    .review-profile span img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .review-profile h1,
+    .review-profile span {
+        height: max-content;
+        width: max-content;
+        max-width: max-content;
+        font-size: 0.7rem;
+    }
+
+    .review-profile span:nth-last-child(1) {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .review-profile span:nth-last-child(1) img {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .review-rating {
+        height: 10px;
+    }
+
+    .review-rating img {
+        height: 100%;
+        width: 0.6rem;
+    }
+
+    .review-box p {
+        font-size: 0.7rem;
+    }
+}

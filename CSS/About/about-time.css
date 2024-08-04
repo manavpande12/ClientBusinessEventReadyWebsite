@@ -1,0 +1,75 @@
+.storeTime {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.storeTimeWrapper {
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.storeTimeWrapper thead tr {
+    background: var(--yellow-back);
+    color: var(--darker);
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.storeTimeWrapper {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.storeTimeWrapper th,
+.storeTimeWrapper td {
+    padding: 20px 15px;
+}
+
+.storeTimeWrapper tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.storeTimeWrapper tbody tr:nth-of-type(even) {
+    background: var(--white);
+}
+
+.storeTimeWrapper tbody tr:nth-of-type(odd) {
+    background-color: var(--bggs);
+}
+
+.storeTimeWrapper tbody tr:last-of-type {
+    border-bottom: 2px solid var(--yellow);
+}
+
+.storeTimeWrapper tbody tr.active-row {
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.storeTimeWrapper tbody:hover tr:not(:hover){
+    cursor: pointer;
+    filter: blur(5px);
+    transition: .3s;
+}
+.storeTimeWrapper tbody tr:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+    background: var(--yellow-back);
+    color: black;
+}
+
+@media screen and (max-width: 425px) {
+    .storeTimeWrapper {
+        font-size: 0.6em;
+    }
+    
+}

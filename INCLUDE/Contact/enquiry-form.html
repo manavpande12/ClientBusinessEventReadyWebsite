@@ -1,0 +1,84 @@
+<form id="Enq-form" action="index.php" name="Enquiry-Form" method="post" class="contact-form"
+    onsubmit="return handleSubmit(event);target='_blank';">
+    <div class="input-wrap">
+        <input class="contact-input" autocomplete="off" id="FirstName" type="text" required>
+        <label for="FirstName">FIRST NAME</label>
+        <i class="icon fa-solid fa-address-card"></i>
+    </div>
+
+    <div class="input-wrap">
+        <input class="contact-input" autocomplete="off" id="LastName" type="text" required>
+        <label for="LastName">LAST NAME</label>
+        <i class="icon fa-solid fa-address-card"></i>
+    </div>
+
+    <div class="input-wrap w-100">
+        <input class="contact-input" autocomplete="off" id="Email" type="email" required>
+        <label for="Email">EMAIL</label>
+        <i class="icon fa-solid fa-envelope"></i>
+    </div>
+
+    <div class="input-wrap w-100">
+        <select class="contact-input" autocomplete="off" id="Event" required>
+            <option></option>
+            <option>Other</option>
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Corporate Event</option>
+            <option>Baby Shower</option>
+            <option>Graduation Party</option>
+            <option>Engagement Party</option>
+            <option>Housewarming Party</option>
+            <option>Retirement Party</option>
+            <option>Farewell Party</option>
+            <option>Holiday Party</option>
+            <option>Charity Event</option>
+            <option>Conference</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Concert</option>
+            <option>Exhibition</option>
+            <option>Trade Show</option>
+            <option>Product Launch</option>
+            <option>Sports Event</option>
+            <option>Fundraising Event</option>
+            <option>Family Reunion</option>
+            <option>Festival</option>
+            <option>Team Building Event</option>
+            <option>Gala</option>
+            <option>Meetup</option>
+            <option>Bridal Shower</option>
+            <option>Book Launch</option>
+            <option>Fashion Show</option>
+            <option>Art Exhibition</option>
+            <option>Theater Performance</option>
+            <option>Movie Premiere</option>
+            <option>Carnival</option>
+            <option>Picnic</option>
+            <option>Open House</option>
+            <option>Political Event</option>
+            <option>School/Clg Event</option>
+            <option>Varhikh Shradha</option>
+
+        </select>
+        <label for="Event">EVENT</label>
+        <i class="icon fa-solid fa-star"></i>
+    </div>
+
+    <div class="input-wrap textarea w-100">
+        <textarea class="contact-input" autocomplete="off" id="Message" required></textarea>
+        <label for="Message" id="msg">MESSAGE</label>
+        <i class="icon fa-solid fa-inbox"></i>
+    </div>
+
+    <div class="contact-buttons">
+        <button type="submit" class="btn whatsapp" id="submitOne">
+            <span><i class="fa-brands fa-whatsapp" style="color:#000;"></i></span>
+            <a>WhatsApp</a>
+        </button>
+        <input type="submit" value="Send Mail" class="btn" id="submitTwo">
+    </div>
+</form>
+
+<script src="JS/Contact/contact.js"></script>

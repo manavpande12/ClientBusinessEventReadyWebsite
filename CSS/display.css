@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+
+* {
+    font-family: Poppins;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    scroll-behavior: smooth;
+    
+
+    /*Colors*/
+    --white: #f2f2f2;
+    --darker: #222831;
+    --dark: #393e46;
+    --yellow-back: radial-gradient(rgb(255, 231, 46), #ffd900);
+    --yellow: #ffdd00;
+    --main-hue: 208;
+    --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
+    --dark-blue: #020f2a;
+    --bggs:rgb(248, 248, 248);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--dark),var(--darker));
+}
+
+.text-yellow {
+    color: #ffd900;
+    font-weight: bold;
+}
+
+
+
+.show-animation{
+    opacity: 1;
+}
+
+.hide-animation{
+    opacity: 0;
+    transition: all 1s;
+
+}

@@ -1,0 +1,69 @@
+.ytEmbWrapper{
+    margin: 1rem 0;
+    width: 100%;
+    height: 360px;
+    background: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ytbox1{
+    width: 50%;
+    height: 100%;
+   
+}
+
+.ytbox2{
+    width: 50%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+
+.ytbox2 h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--yellow);
+}
+
+.ytbox2 p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--darker);
+}
+
+@media screen and (max-width: 1271px) {
+    .ytbox2 h1{
+        font-size: 35px;
+    }
+    
+    .ytbox2 p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .ytEmbWrapper{
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .ytbox1{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .ytbox2{
+        width: 100%;
+        height: max-content;
+    }
+}

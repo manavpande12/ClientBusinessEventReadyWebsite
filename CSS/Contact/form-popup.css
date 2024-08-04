@@ -1,0 +1,128 @@
+.popup-center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    height: 280px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out, 
+                transform 1000ms ease-in-out;
+
+}
+.popup-center.active-popup{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.1);
+}
+
+
+.popup-icon{
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+.popup-icon i.fa{
+    font-size: 30px;
+    color: #34f234;
+}
+
+.popup-title{
+    margin: 5px 0px ;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popup-content{
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popup-close{
+    margin-top: 15px;
+}
+
+.popup-close button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 100px;
+    background: #009dff;
+    border: #f5f5f5;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.popup-close button:hover{
+    color: #000000;
+    background-color: #f5f5f5;
+    border: 2px solid #009dff;
+}
+
+
+.popup-center>div{
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+.popup-center.active-popup>div{
+    top: 0px;
+    opacity: 1;
+}
+
+.popup-center.active-popup .popup-icon{
+    transition: all 300ms ease-in-out 250ms;
+}
+.popup-center.active-popup .popup-title{
+    transition: all 300ms ease-in-out 300ms;
+}
+.popup-center.active-popup .popup-content{
+    transition: all 300ms ease-in-out 350ms;
+}
+.popup-center.active-popup .popup-close{
+    transition: all 300ms ease-in-out 400ms;
+}
+
+@media screen and (max-width: 413px) {
+    .popup-center{
+        width: 260px;
+        height: 250px;
+    }
+    .popup-close button{
+        padding: 10px 40px;
+    }
+    .popup-title{
+        font-size: 15px;
+    }
+    .popup-content{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 289px) {
+    .popup-center{
+        width: 210px;
+        
+    }
+}
